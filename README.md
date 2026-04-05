@@ -1,7 +1,7 @@
 # Al Raedon — Trading & Logistics Landing Page
 
 <div align="center">
-  <img src="./public/assets/Logo/logo-v.png" alt="Al Raedon Logo" width="120" />
+  <img src="public/assets/Logo/logo-v.png" alt="Al Raedon Logo" width="120" />
   <br /><br />
   <p>
     A production-grade, bilingual (EN / AR) landing page for <strong>Al Raedon Trading & Logistics Services</strong> — an Egyptian company providing integrated logistics, trading, agricultural production, and import/export solutions.
