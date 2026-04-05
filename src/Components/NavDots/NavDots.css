@@ -1,0 +1,88 @@
+.nav-dots {
+    position: fixed;
+    bottom: 36px;
+    left: 32px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Button */
+  .nav-dots__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(27, 42, 74, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: var(--grey-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.25s ease, border-color 0.25s ease,
+                color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 2px 12px rgba(27, 42, 74, 0.1);
+  }
+  
+  .nav-dots__btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .nav-dots__btn:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--gold-light);
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(27, 42, 74, 0.25);
+  }
+  
+  .nav-dots__btn--active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--gold);
+    box-shadow: 0 4px 16px rgba(27, 42, 74, 0.2);
+  }
+  
+  .nav-dots__btn--active:hover {
+    background: var(--navy-mid);
+  }
+  
+  /* Track — thin progress line between buttons */
+  .nav-dots__track {
+    width: 2px;
+    height: 28px;
+    background: rgba(27, 42, 74, 0.1);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-dots__indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, var(--gold), var(--gold-dim));
+    border-radius: 2px;
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-dots__indicator--bottom {
+    top: 50%;
+  }
+  
+  /* RTL: flip to right side */
+  [dir="rtl"] .nav-dots {
+    left: auto;
+    right: 32px;
+  }
+  
+  /* Hide on very small screens where it would overlap content */
+  @media (max-width: 360px) {
+    .nav-dots { display: none; }
+  }

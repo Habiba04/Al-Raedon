@@ -2,9 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Al-Raedon | Trading & Logistics</title>
+
+    <!--
+      Favicon strategy:
+      - ?v=2 busts the browser cache so the old React/Vite icon is dropped
+      - We use the dark (navy) logo as default, white version for dark-mode OS
+      - PNG is universally supported; no ICO needed for modern browsers
+    -->
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" href="/assets/Logo/logo-v.PNG?v=2" />
+
+    <!-- Dark-mode OS preference → use the white logo -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/Logo/logo-v-white.PNG?v=2"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Apple touch icon (home screen shortcut) -->
+    <link rel="apple-touch-icon" href="/assets/Logo/logo-v.PNG?v=2" />
   </head>
   <body>
     <div id="root"></div>

@@ -1,29 +1,33 @@
-import React from "react";
-import "./App.css";
-import "./i18n/i18n";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import About from "./Components/About/About";
-import Services from "./Components/Services/Services";
-import Contact from "./Components/Contact/Contact";
-import Vision from "./Components/Vision/Vision";
-import Mission from "./Components/Mission/Mission";
-import Values from "./Components/Values/Values";
-import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
-import Sustainability from "./Components/Sustainability/Sustainability";
+import React from 'react';
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
+import Hero from './Components/Hero/Hero';
+import Services from './Components/Services/Services';
+import Sustainability from './Components/Sustainability/Sustainability';
+import VisionMission from './Components/Vision/Vision';
+import WhyUs from './Components/WhyChooseUs/WhyChooseUs';
+import Contact from './Components/Contact/Contact';
+import NavDots from './Components/NavDots/NavDots';
+
+
+
 const App: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Vision />
-      <Mission />
-      <Values />
-      <WhyChooseUs />
-      <Services />
-      <Sustainability />
-      <Contact />
+      <NavDots />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <VisionMission />
+        <WhyUs />
+        <Sustainability />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 };
