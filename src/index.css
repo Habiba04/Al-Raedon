@@ -1,69 +1,141 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* ── CSS Tokens ─────────────────────────────────────────── */
+:root {
+  --navy:        #1B2A4A;
+  --navy-deep:   #111E36;
+  --navy-mid:    #243659;
+  --navy-light:  #2E4270;
+  --gold:        #C9A84C;
+  --gold-light:  #E2C97E;
+  --gold-dim:    #9A7A34;
+  --white:       #FFFFFF;
+  --off-white:   #F4F5F7;
+  --grey-light:  #E8EAF0;
+  --grey-mid:    #8A93A8;
+  --text-dark:   #1B2A4A;
+  --text-body:   #3D4D6A;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --section-pad: 100px 0;
+  --container:   1200px;
+  --radius:      4px;
+  --radius-lg:   12px;
+
+  --transition:  0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-card: 0 8px 40px rgba(27, 42, 74, 0.12);
+  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.25);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* ── Reset & Base ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
+/* RTL support */
+body[dir="rtl"] { font-family: 'DM Sans', 'Noto Sans Arabic', sans-serif; }
+
+/* ── Utility Classes ────────────────────────────────────── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 600;
   line-height: 1.1;
+  color: var(--navy);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.section-title.light { color: var(--white); }
+
+.section-desc {
+  font-size: 16px;
+  color: var(--text-body);
+  line-height: 1.8;
+  max-width: 600px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+.section-desc.light { color: rgba(255,255,255,0.75); }
+
+/* ── Scroll Animation ───────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.3s; }
+.fade-up.delay-4 { transition-delay: 0.4s; }
+.fade-up.delay-5 { transition-delay: 0.5s; }
+
+/* ── Gold Divider Line ──────────────────────────────────── */
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  margin: 16px 0 28px;
+}
+
+/* ── Diagonal Section Separator ────────────────────────── */
+.diagonal-top {
+  position: relative;
+}
+.diagonal-top::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 0; right: 0;
+  height: 60px;
+  background: inherit;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 1;
+}
+
+/* ── Ant Design Overrides ───────────────────────────────── */
+.ant-btn-primary {
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--navy-deep) !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+.ant-btn-primary:hover {
+  background: var(--gold-light) !important;
+  border-color: var(--gold-light) !important;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  :root { --section-pad: 70px 0; }
+}

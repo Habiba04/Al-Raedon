@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "about": "About Us",
+    "services": "Services",
+    "vision": "Vision & Mission",
+    "why": "Why Us",
+    "sustainability": "Sustainability",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Egypt's Premier Logistics Partner",
+    "title": "Moving Egypt's\nSupply Chain\nForward",
+    "subtitle": "Integrated logistics and trading solutions built on technology, expertise, and sustainability — from storage to international trade.",
+    "cta": "Learn More",
+    "cta2": "Contact Us",
+    "stat1": "Core Services",
+    "stat2": "Supply Chain",
+    "stat3": "Monitoring"
+  },
+  "about": {
+    "label": "Who We Are",
+    "title": "Built for the Future\nof Logistics",
+    "p1": "Alraedon Trading and Logistics Services is one of Egypt's emerging companies, established with an ambitious vision to provide comprehensive logistics and trading solutions that meet international standards.",
+    "p2": "We aim to be a trusted partner for the food, trade, and supply sectors by offering an integrated system covering all stages of the supply chain — from storage and management to transportation, distribution, and international trade.",
+    "p3": "The company adopts advanced digital systems for fleet and inventory management to ensure operational efficiency, transparency, and real-time performance monitoring.",
+    "stat1": "Supply Chain",
+    "stat1sub": "End-to-End Coverage",
+    "stat2": "Real-Time",
+    "stat2sub": "Fleet & Inventory Tracking",
+    "stat3": "International",
+    "stat3sub": "Standards & Compliance",
+    "about_trust1": "Trusted",
+    "about_trust2": "Partner"
+  },
+  "services": {
+    "label": "What We Offer",
+    "title": "Our Services",
+    "subtitle": "A complete suite of logistics and trading solutions tailored to your business scale and needs.",
+    "s1_title": "Warehouse Management & Operations",
+    "s1_items": [
+      "Cold and frozen storage for food products",
+      "Dry storage for packaged and canned goods",
+      "Real-time inventory tracking and rotation systems",
+      "Repacking and preparation for export",
+      "On-demand storage for seasonal needs"
+    ],
+    "s2_title": "Transportation & Distribution",
+    "s2_items": [
+      "Fleet equipped with cooling and freezing systems",
+      "Smart route optimization and live vehicle tracking",
+      "Delivery management to sales points or export destinations",
+      "Real-time monitoring to reduce downtime"
+    ],
+    "s3_title": "Logistics Consulting & Training",
+    "s3_items": [
+      "Specialized consultancy in warehouse design and management",
+      "Assistance with Egyptian White List qualification",
+      "Professional training programs for staff",
+      "Digital transformation support for logistics systems"
+    ],
+    "s4_title": "Trading & Supplies",
+    "s4_items": [
+      "General supplies of food products and raw materials",
+      "Import and export services for third parties",
+      "Trading in processed, fresh, and frozen food products",
+      "Linking local producers with international buyers"
+    ],
+    "s5_title": "Agricultural Production",
+    "s5_items": [
+      "We possess extensive expertise in agricultural production, where we focus on cultivating high-quality crops using the best modern farming practices.",
+      "We are committed to applying food safety and quality standards throughout all production stages to ensure a final product that complies with international specifications."
+    ],
+    "s6_title": "Import & Export",
+    "s6_items": [
+      "We provide integrated import and export services, including the supply and export of fresh and frozen agricultural produce and processed food products of all kinds, in accordance with the highest international quality standards.",
+      "We manage all stages of the process, from procurement and packaging to shipping and clearance, ensuring products arrive efficiently and on time."
+    ],
+    "warehouse": { "title": "Warehouse Management" },
+    "transport": { "title": "Transportation & Distribution" },
+    "consulting": { "title": "Logistics Consulting" },
+    "trading": { "title": "Trading & Supplies" }
+  },
+  "vision": {
+    "label": "Our Direction",
+    "vision_title": "Vision",
+    "vision_text": "To become the first choice in Egypt and the region for integrated logistics and trading solutions, leading a transformation in supply chain management through innovation, technology, and reliability.",
+    "mission_title": "Mission",
+    "mission_text": "We deliver comprehensive logistics and trading services built on technology, expertise, and sustainability to support our clients' success — providing smart, flexible, and tailor-made solutions that meet the specific operational needs of each business.",
+    "values_title": "Values",
+    "values": [
+      "Commitment to deadlines and quality standards",
+      "Flexibility in meeting client needs",
+      "Transparency in communication and reporting",
+      "Innovation in providing solutions",
+      "Sustainable partnerships with clients and suppliers"
+    ]
+  },
+  "why": {
+    "label": "Why Choose Us",
+    "title": "The Al-Raedon\nAdvantage",
+    "items": [
+      {
+        "title": "Integrated System",
+        "desc": "One unified platform combining storage, transportation, and management with specialized teams."
+      },
+      {
+        "title": "Industry Expertise",
+        "desc": "Specialized teams with deep practical experience in the food and logistics sectors."
+      },
+      {
+        "title": "Tailored Solutions",
+        "desc": "Customized logistics solutions that match your business nature, scale, and goals."
+      },
+      {
+        "title": "Qualified Infrastructure",
+        "desc": "Certified facilities applying international quality and food safety standards."
+      },
+      {
+        "title": "Digital Visibility",
+        "desc": "Real-time digital tracking ensuring full visibility and control over your supply chain."
+      },
+      {
+        "title": "Eco-Responsible",
+        "desc": "Environmentally responsible operations that actively promote sustainability."
+      }
+    ]
+  },
+  "sustainability": {
+    "label": "Our Commitment",
+    "title": "Sustainability &\nEnvironmental\nResponsibility",
+    "text": "Alraedon is committed to implementing eco-friendly logistics operations aimed at reducing emissions and energy consumption. We strive to apply sustainable practices such as route optimization, digital documentation, and efficient fleet utilization that minimize our carbon footprint.",
+    "pillars": [
+      { "title": "Route Optimization", "desc": "Smart algorithms minimize travel distances and fuel consumption across every delivery." },
+      { "title": "Digital Documentation", "desc": "Paperless processes reduce waste and streamline operations end-to-end." },
+      { "title": "Efficient Fleet", "desc": "Maintained and optimized vehicles reduce emissions while maximizing delivery performance." }
+    ]
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Let's Work\nTogether",
+    "subtitle": "Ready to optimize your supply chain? Our team is here to help you build a smarter logistics operation.",
+    "address_label": "Address",
+    "address": "Wadi El Nile Street, Mohandessin, Giza, Egypt",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "web_label": "Website"
+  },
+  "footer": {
+    "tagline": "Trading & Logistics Services",
+    "desc": "Egypt's emerging leader in integrated logistics and trading solutions, serving the food, trade, and supply chain sectors.",
+    "rights": "© 2026 Al Raedon Trading & Logistics Services. All rights reserved.",
+    "credits" : "Built with precision & purpose.",
+    "location": "Mohandessin, Giza, Egypt",
+    "headers": {
+      "company": "Company",
+      "services": "Our Services",
+      "contact": "Get in Touch"
+    }
+  }
+}
