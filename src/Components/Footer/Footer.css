@@ -1,0 +1,173 @@
+.footer {
+    background: var(--navy-deep);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Top diagonal cut from previous section */
+  .footer__diagonal {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 70px;
+    background: var(--off-white);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    pointer-events: none;
+  }
+  
+  /* Main grid */
+  .footer__inner {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-top: 100px;
+    padding-bottom: 64px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Brand */
+  .footer__brand { display: flex; flex-direction: column; }
+  
+  .footer__logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    margin-bottom: 16px;
+    align-self: flex-start;
+  }
+  
+  .footer__tagline {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  
+  .footer__desc {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.75;
+    max-width: 260px;
+  }
+  
+  .footer__gold-line {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin-top: 24px;
+    border-radius: 2px;
+  }
+  
+  /* Nav columns */
+  .footer__col { display: flex; flex-direction: column; }
+  
+  .footer__col-heading {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  
+  .footer__col-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer__link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.45);
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+    line-height: 1.5;
+  }
+  
+  .force-ltr {
+    direction: ltr !important;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+  
+  /* Optional: Ensure numbers use the English font for better legibility */
+  [dir="rtl"] .force-ltr {
+    font-family: var(--font-en); 
+    font-size: 0.95rem;
+  }
+  
+  .footer__link:hover { color: rgba(255,255,255,0.85); }
+  
+  /* Bottom bar */
+  .footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .footer__rights,
+  .footer__credits {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.3px;
+  }
+  
+  /* Background watermark */
+  .footer::after {
+    content: 'AL RAEDON';
+    position: absolute;
+    bottom: 60px;
+    right: -20px;
+    font-family: var(--font-display);
+    font-size: 120px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.02);
+    letter-spacing: -2px;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  /* RTL */
+  [dir="rtl"] .footer__inner { direction: rtl; }
+  [dir="rtl"] .footer__link { text-align: right; }
+  [dir="rtl"] .footer__logo { align-self: flex-end; }
+  [dir="rtl"] .footer__desc { max-width: 100%; }
+  [dir="rtl"] .footer__gold-line {
+    background: linear-gradient(270deg, var(--gold), transparent);
+    align-self: flex-end;
+  }
+  
+  @media (max-width: 960px) {
+    .footer__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .footer__brand { grid-column: 1 / -1; }
+  }
+  
+  @media (max-width: 560px) {
+    .footer__inner { grid-template-columns: 1fr; }
+    .footer__bottom-inner { flex-direction: column; text-align: center; }
+  }
